@@ -1,6 +1,11 @@
 Package: RSessionScript
 Title: Extract code (and output) from R session transcript
-Description:  Extract session code and output.
+Description:  This is a script and some functions that I have used to
+ take an the transcript of an R session  (e.g. during class)
+ and extract the top-level expressions/commands and/or the
+ output from the commands.
+ I used this after lectures to create an Rdb and then HTML file of the
+ R session.
 Version: 0.1-0
 Author: Duncan Temple Lang
 Maintainer: Duncan Temple Lang <duncan@r-project.org>
