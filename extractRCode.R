@@ -11,11 +11,12 @@
 # Then  make Lec15.html
 
 getCode = 
-function(filename, txt = readLines(filename), prompt = c("> ", "\\+ "),
+function(filename, txt = readLines(filename), prompt = c("(\\[[0-9]+:[0-9]+\\] [0-9]+>|1>)", "\\+ "),
           fun = getExpression, omit = TRUE, dropErrors = TRUE, output = FALSE)
 {
-   i = grep(sprintf("^%s", prompt[1]), txt)
-   if(max(i) != length(txt)) {
+    i = grep(sprintf("^%s", prompt[1]), txt)
+    browser()
+    if(max(i) != length(txt)) {
      txt = c(txt, prompt[1])
      i = c(i, length(txt))
    }
