@@ -1,0 +1,9 @@
+export(getCode)
+export(asRdbTranscript)
+S3method(asRdbTranscript, SessionCode)
+S3method(asRdbTranscript, SessionCodeWithOutput)
+
+export(toFile)
+S3method(toFile, XMLSession)
+
+
